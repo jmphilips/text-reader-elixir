@@ -17,6 +17,10 @@ defmodule TextReader.Mixfile do
     [applications: [:logger]]
   end
 
+  def escript do
+    [main_module: MyApp.CLI]
+  end
+
   # Dependencies can be Hex packages:
   #
   #   {:mydep, "~> 0.3.0"}
@@ -30,3 +34,7 @@ defmodule TextReader.Mixfile do
     []
   end
 end
+
+
+
+ 
